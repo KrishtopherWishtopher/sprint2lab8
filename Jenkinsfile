@@ -16,7 +16,7 @@ pipeline
         {
                 steps
                 {
-                        sh 'docker build -t team-skeleton:${BUILD_NUMBER}'
+                        sh 'docker build -t team-skeleton:${BUILD_NUMBER} .'
                 }
         }
          stage('Test') 
