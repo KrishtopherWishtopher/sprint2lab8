@@ -25,13 +25,6 @@ pipeline
              {
                   sh 'mvn -B test'
              }
-              post 
-             {
-                 always 
-                 {
-                      junit 'target/surefire-reports/*.xml'
-                 }
-             }
           }
     }
 }
