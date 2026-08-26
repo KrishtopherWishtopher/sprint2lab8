@@ -12,7 +12,7 @@ pipeline
                 }
 
         }
-        stage('Build-Image')
+        stage('Build Image')
         {
                 steps
                 {
@@ -27,7 +27,7 @@ pipeline
              }
               post 
              {
-                  always 
+                 always 
                  {
                       junit 'target/surefire-reports/*.xml'
                  }
